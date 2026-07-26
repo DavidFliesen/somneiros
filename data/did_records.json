@@ -1,0 +1,43 @@
+[
+  {
+    "record_id": "0f4168490e38",
+    "symbol": "Water",
+    "aliases": [
+      "ocean",
+      "river",
+      "rain",
+      "flood"
+    ],
+    "categories": [
+      "nature",
+      "emotion",
+      "transition"
+    ],
+    "interpretations": [
+      {
+        "tradition": "general reflective framework",
+        "summary": "Water may invite reflection on emotion, uncertainty, change, cleansing, danger, or renewal, depending on context.",
+        "themes": [
+          "emotion",
+          "change",
+          "depth"
+        ],
+        "confidence": "low",
+        "evidence_ids": [],
+        "caveats": [
+          "This is a broad starter interpretation, not a universal meaning."
+        ]
+      }
+    ],
+    "reflection_prompts": [
+      "Was the water calm, contained, rising, or dangerous?",
+      "What emotion in waking life feels most similar?",
+      "Were you observing the water or moving through it?"
+    ],
+    "safety_notes": [
+      "Do not interpret the dream as a prediction or diagnosis."
+    ],
+    "reviewed_at": "2026-07-26T16:47:34.961635+00:00",
+    "version": "0.1"
+  }
+]
