@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090f2b">
+  <meta name="description" content="Somneiros is a private, reflective dream journal and interpretation companion.">
+  <title>Somneiros — Dream Interpretation</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <button class="icon-button" id="menuButton" aria-label="Open menu">☰</button>
+    <div class="brand-mini"><img src="assets/icon-192.png" alt=""><span>Somneiros</span></div>
+    <button class="icon-button" id="themeButton" aria-label="Toggle theme">☾</button>
+  </header>
+
+  <nav id="drawer" class="drawer" aria-hidden="true">
+    <button class="drawer-close" id="closeDrawer" aria-label="Close menu">×</button>
+    <a href="#interpret">Interpret</a><a href="#journal">Dream Journal</a><a href="#symbols">Symbol Explorer</a><a href="#about">About</a>
+    <button id="installButton" class="install-button" hidden>Install App</button>
+  </nav>
+  <div id="scrim" class="scrim" hidden></div>
+
+  <main>
+    <section class="hero">
+      <img class="hero-logo" src="assets/somneiros-logo.png" alt="Somneiros logo: an eye within a crescent moon">
+      <p class="hero-copy">Record the dream. Notice the pattern. Explore what it may mean to you.</p>
+      <a class="primary-cta" href="#interpret">Interpret a Dream</a>
+    </section>
+
+    <section id="interpret" class="panel">
+      <div class="section-heading"><span class="eyebrow">DREAM INTERPRETER</span><h1>What happened in your dream?</h1><p>Describe the setting, people, emotions, symbols, and anything that felt unusually vivid.</p></div>
+      <form id="dreamForm">
+        <label for="dreamTitle">Dream title</label><input id="dreamTitle" maxlength="80" placeholder="The lighthouse in the storm">
+        <label for="dreamText">Dream details</label><textarea id="dreamText" rows="8" required placeholder="I was walking toward a lighthouse while the ocean rose around me..."></textarea>
+        <div class="form-grid">
+          <div><label for="emotion">Strongest emotion</label><select id="emotion"><option>Curiosity</option><option>Fear</option><option>Joy</option><option>Sadness</option><option>Anger</option><option>Confusion</option><option>Peace</option></select></div>
+          <div><label for="intensity">Intensity</label><select id="intensity"><option value="1">1 — Faint</option><option value="2">2 — Mild</option><option value="3" selected>3 — Clear</option><option value="4">4 — Strong</option><option value="5">5 — Vivid</option></select></div>
+        </div>
+        <label for="lifeContext">Optional waking-life context</label><textarea id="lifeContext" rows="3" placeholder="A change, conflict, decision, or relationship that may be relevant"></textarea>
+        <div class="consent-row"><input type="checkbox" id="saveDream" checked><label for="saveDream">Save this dream locally on this device</label></div>
+        <button type="submit" class="primary-button">Explore Meaning</button>
+      </form>
+      <article id="resultCard" class="result-card" hidden><span class="eyebrow">REFLECTIVE INTERPRETATION</span><h2 id="resultTitle"></h2><div id="resultBody"></div><p class="disclaimer">Somneiros offers reflective possibilities, not diagnosis, prediction, or medical advice.</p></article>
+    </section>
+
+    <section id="journal" class="panel"><div class="section-heading"><span class="eyebrow">PRIVATE JOURNAL</span><h2>Your saved dreams</h2><p>Entries remain in your browser unless you export or delete them.</p></div><div class="journal-actions"><button id="exportButton" class="secondary-button">Export JSON</button><button id="clearButton" class="ghost-button">Clear Journal</button></div><div id="journalList" class="journal-list"></div></section>
+
+    <section id="symbols" class="panel"><div class="section-heading"><span class="eyebrow">DID PREVIEW</span><h2>Dream symbol explorer</h2><p>Search a starter set of symbols. The Colab notebook is designed to expand this into the Dream Interpretation Database.</p></div><input id="symbolSearch" type="search" placeholder="Search water, house, flying, teeth..."><div id="symbolGrid" class="symbol-grid"></div></section>
+
+    <section id="about" class="panel about-panel"><span class="eyebrow">ABOUT</span><h2>Somneiros</h2><p>Somneiros combines a private dream journal, symbolic pattern exploration, and a future research-backed interpretation engine.</p><p>The long-term goal is to connect cultural, psychological, historical, and personal interpretations without presenting any single meaning as absolute.</p><p class="small">Built as a progressive web app. Install it from a supported browser for an app-like experience.</p></section>
+  </main>
+  <footer><p>Somneiros • Understand • Insight • Transform</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>

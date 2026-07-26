@@ -1,0 +1,13 @@
+{
+  "name": "Somneiros — Dream Interpretation",
+  "short_name": "Somneiros",
+  "description": "A private dream journal and reflective interpretation companion.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#071022",
+  "theme_color": "#090f2b",
+  "icons": [
+    {"src":"assets/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"assets/icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}
