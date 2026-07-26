@@ -19,7 +19,10 @@ Somneiros is a privacy-conscious progressive web app for recording dreams, explo
 - Offline application shell
 - Local dream journal stored in the browser
 - JSON journal export
-- Starter dream-symbol explorer
+- Expanded dream-symbol explorer
+- Understanding Your Dreams learning center
+- Verified and evidence-labeled famous dream stories
+- Current competitor comparison and product differentiation plan
 - Rule-based reflective interpretation prototype
 - Dark and light modes
 - Colab-ready agentic research notebook for expanding the Dream Interpretation Database
@@ -102,3 +105,12 @@ Somneiros should not present dream interpretations as factual predictions, diagn
 ## License
 
 Choose a license before public release. MIT is suitable for an open-source application, while the logo and brand assets may be retained under separate branding terms.
+
+
+## Understanding Your Dreams artwork
+
+Original artwork is organized under `assets/understanding/` with separate folders for science topics, historical traditions, famous dreams, and common symbols.
+
+## Evidence policy
+
+Somneiros separates contemporary scientific findings, historical interpretations, religious and cultural traditions, first-person historical accounts, popular but disputed anecdotes, and reflective symbol possibilities. Disputed stories must never be presented as established fact.
