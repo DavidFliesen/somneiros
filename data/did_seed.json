@@ -1,0 +1,27 @@
+[
+  {
+    "symbol": "Water",
+    "aliases": ["ocean", "river", "rain", "flood"],
+    "domains": ["emotion", "change", "depth"],
+    "interpretations": [
+      {"tradition":"psychological","summary":"May reflect emotional intensity, unconscious material, uncertainty, cleansing, or transition.","confidence":"starter"},
+      {"tradition":"cross-cultural","summary":"Often associated with life, renewal, danger, passage, or purification; meanings vary widely by culture.","confidence":"starter"}
+    ]
+  },
+  {
+    "symbol": "House",
+    "aliases": ["home", "room", "building"],
+    "domains": ["identity", "memory", "family"],
+    "interpretations": [
+      {"tradition":"psychological","summary":"May represent the self, personal history, family life, or distinct areas of the mind.","confidence":"starter"}
+    ]
+  },
+  {
+    "symbol": "Flying",
+    "aliases": ["floating", "levitating"],
+    "domains": ["freedom", "control", "escape"],
+    "interpretations": [
+      {"tradition":"psychological","summary":"Can suggest freedom, confidence, aspiration, avoidance, or altered control.","confidence":"starter"}
+    ]
+  }
+]
