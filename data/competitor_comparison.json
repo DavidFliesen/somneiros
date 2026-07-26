@@ -1,0 +1,50 @@
+[
+  {
+    "app": "Oniri",
+    "platforms": "iOS / Android",
+    "strengths": [
+      "Voice capture",
+      "AI interpretation",
+      "Lucid-dream tools",
+      "Statistics",
+      "Images",
+      "Encrypted journal"
+    ],
+    "somneiros_opportunity": "Lead with source transparency, DID evidence cards, explainable reasoning, local-first access, and historical learning."
+  },
+  {
+    "app": "DreamApp",
+    "platforms": "iOS / Android",
+    "strengths": [
+      "AI interpretation",
+      "Dream dictionary",
+      "Guided questions",
+      "Encyclopedia",
+      "Therapist-oriented positioning"
+    ],
+    "somneiros_opportunity": "Use a shorter single-submit form, avoid diagnostic claims, clearly label evidence quality, and show alternative interpretations."
+  },
+  {
+    "app": "Dreamly",
+    "platforms": "iOS",
+    "strengths": [
+      "Instant AI meanings",
+      "Private journal",
+      "Recurring patterns",
+      "Psychology and symbolism framing"
+    ],
+    "somneiros_opportunity": "Provide inspectable citations, an open DID, personal-symbol learning, and a richer public education section."
+  },
+  {
+    "app": "Dreemlo",
+    "platforms": "iOS / Android",
+    "strengths": [
+      "AI analysis",
+      "Statistics",
+      "Cloud sync",
+      "Offline access",
+      "Reports"
+    ],
+    "somneiros_opportunity": "Differentiate with a research database, historical provenance, confidence labels, and visual dream networks."
+  }
+]

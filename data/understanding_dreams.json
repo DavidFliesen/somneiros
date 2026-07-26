@@ -1,0 +1,325 @@
+{
+  "what_are_dreams": [
+    {
+      "slug": "why-we-dream",
+      "title": "Why We Dream",
+      "image": "assets/understanding/what-are-dreams/why-we-dream.jpg",
+      "summary": "Science does not yet have one proven answer. Leading ideas connect dreaming with memory, emotion, learning, and the brain’s ongoing construction of experience.",
+      "evidence": "Research overview",
+      "source_title": "The Functional Role of Dreaming in Emotional Processes",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6428732/"
+    },
+    {
+      "slug": "rem-sleep",
+      "title": "REM Sleep",
+      "image": "assets/understanding/what-are-dreams/rem-sleep.jpg",
+      "summary": "REM dreams are often longer, more vivid, emotional, and story-like, but dreaming is not limited to REM sleep.",
+      "evidence": "Sleep research",
+      "source_title": "Structural differences between REM and non-REM dream reports",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7377375/"
+    },
+    {
+      "slug": "non-rem-dreams",
+      "title": "Non-REM Dreams",
+      "image": "assets/understanding/what-are-dreams/non-rem-dreams.jpg",
+      "summary": "People also dream during non-REM sleep. Reports are often shorter and less vivid on average, although meaningful and complex non-REM dreams do occur.",
+      "evidence": "Sleep research",
+      "source_title": "The neural correlates of dreaming",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5462120/"
+    },
+    {
+      "slug": "why-dreams-are-forgotten",
+      "title": "Why Dreams Are Forgotten",
+      "image": "assets/understanding/what-are-dreams/why-dreams-are-forgotten.jpg",
+      "summary": "Dream recall varies greatly. Timing of awakening, attention, sleep stage, memory abilities, and personal interest can all affect what is remembered.",
+      "evidence": "Research review",
+      "source_title": "Spotlight on dream recall: the ages of dreams",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5768288/"
+    },
+    {
+      "slug": "false-awakenings",
+      "title": "False Awakenings",
+      "image": "assets/understanding/what-are-dreams/false-awakenings.jpg",
+      "summary": "A false awakening is a dream in which you believe you have awakened and begun normal activities, only to discover that you are still dreaming.",
+      "evidence": "Educational overview",
+      "source_title": "Somneiros editorial overview",
+      "source_url": ""
+    },
+    {
+      "slug": "lucid-dreaming",
+      "title": "Lucid Dreaming",
+      "image": "assets/understanding/what-are-dreams/lucid-dreaming.jpg",
+      "summary": "A lucid dream occurs when a person becomes aware that they are dreaming while the dream is still happening. Control may be present, but awareness is the defining feature.",
+      "evidence": "Neuroscience review",
+      "source_title": "The cognitive neuroscience of lucid dreaming",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6451677/"
+    },
+    {
+      "slug": "nightmares",
+      "title": "Nightmares",
+      "image": "assets/understanding/what-are-dreams/nightmares.jpg",
+      "summary": "Nightmares are distressing dreams that commonly involve threat, fear, or helplessness. Frequent nightmares that disrupt daily life may deserve professional attention.",
+      "evidence": "Clinical distinction",
+      "source_title": "Somneiros safety overview",
+      "source_url": ""
+    },
+    {
+      "slug": "recurring-dreams",
+      "title": "Recurring Dreams",
+      "image": "assets/understanding/what-are-dreams/recurring-dreams.jpg",
+      "summary": "Recurring dreams repeat a storyline, setting, emotion, or theme. Recording changes in the dream and waking-life circumstances can reveal personal patterns.",
+      "evidence": "Reflective guidance",
+      "source_title": "Somneiros editorial overview",
+      "source_url": ""
+    }
+  ],
+  "history": [
+    {
+      "slug": "ancient-egypt",
+      "title": "Ancient Egypt",
+      "image": "assets/understanding/history/ancient-egypt.jpg",
+      "summary": "Surviving Egyptian dream texts include lists of dream images and proposed outcomes. These records show that interpretation was embedded in the religion and social assumptions of its own period.",
+      "evidence": "Historical tradition"
+    },
+    {
+      "slug": "ancient-greece",
+      "title": "Ancient Greece",
+      "image": "assets/understanding/history/ancient-greece.jpg",
+      "summary": "Greek traditions included divine messages, healing dreams at sanctuaries, philosophical debate, and systematic interpretation such as Artemidorus’s later dream manual.",
+      "evidence": "Historical tradition"
+    },
+    {
+      "slug": "ancient-rome",
+      "title": "Ancient Rome",
+      "image": "assets/understanding/history/ancient-rome.jpg",
+      "summary": "Roman accounts often treated dreams as possible omens, political warnings, personal messages, or subjects for skeptical analysis, depending on author and period.",
+      "evidence": "Historical tradition"
+    },
+    {
+      "slug": "biblical-traditions",
+      "title": "Biblical Traditions",
+      "image": "assets/understanding/history/biblical-traditions.jpg",
+      "summary": "Biblical narratives contain dreams connected with warning, guidance, kingship, survival, and interpretation. Somneiros presents these as religious and literary traditions, not universal proof of prophecy.",
+      "evidence": "Religious and literary tradition"
+    },
+    {
+      "slug": "islamic-scholarship",
+      "title": "Islamic Scholarship",
+      "image": "assets/understanding/history/islamic-scholarship.jpg",
+      "summary": "Islamic traditions developed careful categories for dreams and extensive interpretive literature. Material must be tied to specific scholars and texts rather than reduced to generic symbolism.",
+      "evidence": "Religious and scholarly tradition"
+    },
+    {
+      "slug": "medieval-europe",
+      "title": "Medieval Europe",
+      "image": "assets/understanding/history/medieval-europe.jpg",
+      "summary": "Medieval European writers debated whether dreams arose from bodily conditions, everyday concerns, spiritual influence, or deception. Interpretation varied across medicine, theology, and folklore.",
+      "evidence": "Historical tradition"
+    },
+    {
+      "slug": "indigenous-traditions",
+      "title": "Indigenous Traditions",
+      "image": "assets/understanding/history/indigenous-traditions.jpg",
+      "summary": "There is no single Indigenous dream system. Any entry must identify the specific community, source, language, and permission context, and avoid combining distinct peoples into one tradition.",
+      "evidence": "Cultural-context safeguard"
+    },
+    {
+      "slug": "modern-psychology",
+      "title": "Modern Psychology",
+      "image": "assets/understanding/history/modern-psychology.jpg",
+      "summary": "Freud and Jung made dreams central to influential psychological theories. Their interpretations remain historically important, but many claims are debated and should not be presented as settled science.",
+      "evidence": "History of psychology"
+    },
+    {
+      "slug": "contemporary-sleep-science",
+      "title": "Contemporary Sleep Science",
+      "image": "assets/understanding/history/contemporary-sleep-science.jpg",
+      "summary": "Modern research studies dream reports, brain activity, sleep stages, memory, emotion, and consciousness. It does not support a universal dictionary in which every symbol has one fixed meaning.",
+      "evidence": "Contemporary research"
+    }
+  ],
+  "famous_dreams": [
+    {
+      "slug": "august-kekule",
+      "title": "August Kekulé",
+      "image": "assets/understanding/famous-dreams/august-kekule.jpg",
+      "claim": "Kekulé later described a reverie or dreamlike vision of a snake biting its tail while thinking about benzene’s ring structure.",
+      "status": "Later first-person account; details and retrospective storytelling are debated.",
+      "source_title": "Historical accounts of Kekulé’s benzene story should be presented cautiously.",
+      "source_url": ""
+    },
+    {
+      "slug": "dmitri-mendeleev",
+      "title": "Dmitri Mendeleev",
+      "image": "assets/understanding/famous-dreams/dmitri-mendeleev.jpg",
+      "claim": "A popular story says Mendeleev saw the periodic arrangement in a dream.",
+      "status": "Widely repeated anecdote; the table also followed years of documented work, so the dream should not be portrayed as its sole origin.",
+      "source_title": "Anecdotal / disputed emphasis",
+      "source_url": ""
+    },
+    {
+      "slug": "elias-howe",
+      "title": "Elias Howe",
+      "image": "assets/understanding/famous-dreams/elias-howe.jpg",
+      "claim": "A later story says Howe dreamed of spear-carrying attackers whose spear points suggested placing the sewing-machine needle’s eye near its tip.",
+      "status": "Popular but poorly documented story; label as folklore or disputed, not established fact.",
+      "source_title": "Historically disputed anecdote",
+      "source_url": ""
+    },
+    {
+      "slug": "mary-shelley",
+      "title": "Mary Shelley",
+      "image": "assets/understanding/famous-dreams/mary-shelley.jpg",
+      "claim": "In her 1831 introduction to Frankenstein, Shelley described a vivid waking dream of the creator and creature that supplied the central image of the story.",
+      "status": "Strong first-person evidence, written years after the 1816 event.",
+      "source_title": "Frankenstein, 1831 introduction",
+      "source_url": "https://www.gutenberg.org/files/42324/42324-h/42324-h.htm"
+    },
+    {
+      "slug": "paul-mccartney",
+      "title": "Paul McCartney",
+      "image": "assets/understanding/famous-dreams/paul-mccartney.jpg",
+      "claim": "McCartney has repeatedly said that the melody that became “Yesterday” came to him in a dream; he initially checked that he had not unconsciously remembered someone else’s tune.",
+      "status": "First-person account repeated in interviews and biographies.",
+      "source_title": "Paul McCartney’s account of composing Yesterday",
+      "source_url": ""
+    },
+    {
+      "slug": "otto-loewi",
+      "title": "Otto Loewi",
+      "image": "assets/understanding/famous-dreams/otto-loewi.jpg",
+      "claim": "Loewi reported that an experimental idea came to him during sleep, was forgotten, returned the next night, and led to work demonstrating chemical transmission of nerve impulses.",
+      "status": "First-person scientific recollection; the discovery was recognized with the 1936 Nobel Prize shared with Henry Dale.",
+      "source_title": "Nobel Prize in Physiology or Medicine 1936",
+      "source_url": "https://www.nobelprize.org/prizes/medicine/1936/summary/"
+    }
+  ],
+  "symbols": [
+    {
+      "slug": "water",
+      "title": "Water",
+      "image": "assets/understanding/symbols/water.jpg",
+      "summary": "Emotion, change, danger, cleansing, depth",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "house",
+      "title": "House",
+      "image": "assets/understanding/symbols/house.jpg",
+      "summary": "Self, family, memory, privacy, identity",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "flying",
+      "title": "Flying",
+      "image": "assets/understanding/symbols/flying.jpg",
+      "summary": "Freedom, ambition, control, escape",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "snake",
+      "title": "Snake",
+      "image": "assets/understanding/symbols/snake.jpg",
+      "summary": "Threat, instinct, healing, transformation",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "stairs",
+      "title": "Stairs",
+      "image": "assets/understanding/symbols/stairs.jpg",
+      "summary": "Progress, effort, levels, transition",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "teeth",
+      "title": "Teeth",
+      "image": "assets/understanding/symbols/teeth.jpg",
+      "summary": "Vulnerability, appearance, communication, loss",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "falling",
+      "title": "Falling",
+      "image": "assets/understanding/symbols/falling.jpg",
+      "summary": "Instability, surrender, fear, loss of control",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "car",
+      "title": "Car",
+      "image": "assets/understanding/symbols/car.jpg",
+      "summary": "Direction, agency, speed, responsibility",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "tree",
+      "title": "Tree",
+      "image": "assets/understanding/symbols/tree.jpg",
+      "summary": "Growth, roots, family, endurance",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "baby",
+      "title": "Baby",
+      "image": "assets/understanding/symbols/baby.jpg",
+      "summary": "Newness, care, vulnerability, responsibility",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "hands",
+      "title": "Hands",
+      "image": "assets/understanding/symbols/hands.jpg",
+      "summary": "Ability, work, connection, control",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "clock",
+      "title": "Clock",
+      "image": "assets/understanding/symbols/clock.jpg",
+      "summary": "Time, pressure, aging, deadlines",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "door",
+      "title": "Door",
+      "image": "assets/understanding/symbols/door.jpg",
+      "summary": "Opportunity, transition, access, boundaries",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "money",
+      "title": "Money",
+      "image": "assets/understanding/symbols/money.jpg",
+      "summary": "Security, value, power, worry",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "school",
+      "title": "School",
+      "image": "assets/understanding/symbols/school.jpg",
+      "summary": "Learning, testing, judgment, unfinished business",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "death",
+      "title": "Death",
+      "image": "assets/understanding/symbols/death.jpg",
+      "summary": "Ending, grief, fear, transformation—not a prediction",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "wedding",
+      "title": "Wedding",
+      "image": "assets/understanding/symbols/wedding.jpg",
+      "summary": "Commitment, union, change, social expectations",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    },
+    {
+      "slug": "mirror",
+      "title": "Mirror",
+      "image": "assets/understanding/symbols/mirror.jpg",
+      "summary": "Identity, self-image, truth, comparison",
+      "note": "Possible themes only. Personal context matters more than a fixed dictionary definition."
+    }
+  ]
+}
