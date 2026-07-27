@@ -2,83 +2,198 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#090f2b">
   <meta name="description" content="Somneiros is a private dream journal, interpretation companion, and dream-learning library.">
   <title>Somneiros — Dream Interpretation</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
-  <header class="site-header">
-    <button class="icon-button" id="menuButton" aria-label="Open menu">☰</button>
-    <a class="brand-mini" href="#top" aria-label="Somneiros home"><img src="assets/icon-192.png" alt=""><span>Somneiros</span></a>
-    <button class="icon-button" id="themeButton" aria-label="Toggle light and dark mode">☾</button>
+  <header class="app-header">
+    <a class="app-brand" href="#home" data-screen-link="home" aria-label="Somneiros home">
+      <img src="assets/icon-192.png" alt="">
+      <span class="brand-copy">
+        <strong>Somneiros</strong>
+        <small>Understand • Insight • Transform</small>
+      </span>
+    </a>
+
+    <nav class="app-nav" aria-label="Somneiros sections">
+      <a href="#home" data-screen-link="home">Home</a>
+      <a href="#interpret" data-screen-link="interpret">Interpret</a>
+      <a href="#journal" data-screen-link="journal">Journal</a>
+      <a href="#symbols" data-screen-link="symbols">DID</a>
+      <a href="#understanding" data-screen-link="understanding">Learn</a>
+      <a href="#about" data-screen-link="about">About</a>
+    </nav>
+
+    <button class="theme-button" id="themeButton" type="button" aria-label="Toggle light and dark mode">☾</button>
   </header>
 
-  <nav id="drawer" class="drawer" aria-hidden="true" aria-label="Main navigation">
-    <button class="drawer-close" id="closeDrawer" aria-label="Close menu">×</button>
-    <a href="#interpret">Interpret a Dream</a>
-    <a href="#journal">Dream Journal</a>
-    <a href="#symbols">Dream Interpretation Database</a>
-    <a href="#understanding">Understanding Your Dreams</a>
-    <a href="#about">About</a>
-    <button id="installButton" class="install-button" hidden>Install App</button>
-  </nav>
-  <div id="scrim" class="scrim" hidden></div>
-
-  <main id="top">
-    <section class="hero">
-      <img class="hero-logo" src="assets/somneiros-logo.png" alt="Somneiros logo: an eye within a crescent moon">
-      <p class="hero-copy">Record the dream. Notice the pattern. Explore what it may mean to you.</p>
-      <div class="hero-actions"><a class="primary-cta" href="#interpret">Interpret a Dream</a><a class="secondary-cta" href="#understanding">Understanding Your Dreams</a></div>
-    </section>
-
-    <section id="interpret" class="panel">
-      <div class="section-heading"><span class="eyebrow">DREAM INTERPRETER</span><h1>What happened in your dream?</h1><p>Complete this one form, then submit it once for a reflective interpretation.</p></div>
-      <form id="dreamForm">
-        <label for="dreamTitle">Dream title</label><input id="dreamTitle" maxlength="80" placeholder="The lighthouse in the storm">
-        <label for="dreamText">Dream details</label><textarea id="dreamText" rows="8" required placeholder="Describe the setting, people, emotions, symbols, and anything that felt unusually vivid..."></textarea>
-        <div class="form-grid">
-          <div><label for="emotion">Strongest emotion</label><select id="emotion"><option>Curiosity</option><option>Fear</option><option>Joy</option><option>Sadness</option><option>Anger</option><option>Confusion</option><option>Peace</option><option>Other</option></select></div>
-          <div><label for="intensity">Intensity</label><select id="intensity"><option value="1">1 — Faint</option><option value="2">2 — Mild</option><option value="3" selected>3 — Clear</option><option value="4">4 — Strong</option><option value="5">5 — Vivid</option></select></div>
+  <main class="app-main">
+    <section id="home" class="app-screen active" aria-labelledby="homeTitle">
+      <div class="screen-scroll home-screen">
+        <div class="home-layout">
+          <div class="home-logo-wrap">
+            <img class="home-logo" src="assets/somneiros-logo.png" alt="Somneiros logo: an eye within a crescent moon">
+          </div>
+          <div class="home-intro">
+            <span class="eyebrow">DREAMS, PATTERNS, AND PERSONAL MEANING</span>
+            <h1 id="homeTitle">Explore your dreams with more context and less certainty.</h1>
+            <p>Record what you remember, examine possible meanings, notice recurring patterns, and learn how dreams have been understood through science, history, and culture.</p>
+            <div class="home-actions">
+              <a class="primary-cta" href="#interpret" data-screen-link="interpret">Interpret a Dream</a>
+              <a class="secondary-cta" href="#understanding" data-screen-link="understanding">Understanding Your Dreams</a>
+            </div>
+            <div class="home-feature-grid">
+              <article><strong>Private journal</strong><span>Dreams remain on this device unless you export them.</span></article>
+              <article><strong>Dream database</strong><span>Search symbols, actions, emotions, people, places, and experiences.</span></article>
+              <article><strong>Reflective guidance</strong><span>Consider multiple possibilities rather than one fixed answer.</span></article>
+            </div>
+          </div>
         </div>
-        <label for="lifeContext">Anything happening in your life that might relate to this dream? <span class="optional">(optional)</span></label>
-        <textarea id="lifeContext" rows="3" placeholder="Examples: work, school, relationships, moving, a big decision, stress, or exciting news"></textarea>
-        <div class="form-grid compact-grid">
-          <div><label for="wakeFeeling">How did you feel when you woke up? <span class="optional">(optional)</span></label><input id="wakeFeeling" maxlength="100" placeholder="Relieved, unsettled, curious..."></div>
-          <div><label for="recurring">Have you had this dream before?</label><select id="recurring"><option value="no">No</option><option value="yes">Yes</option><option value="not-sure">Not sure</option></select></div>
+      </div>
+    </section>
+
+    <section id="interpret" class="app-screen" aria-labelledby="interpretTitle">
+      <div class="screen-scroll">
+        <div class="screen-shell narrow-shell">
+          <div class="screen-heading">
+            <div><span class="eyebrow">DREAM INTERPRETER</span><h1 id="interpretTitle">What happened in your dream?</h1></div>
+            <p>Complete the form once, then submit it for a reflective interpretation.</p>
+          </div>
+
+          <div class="content-card form-card">
+            <form id="dreamForm">
+              <label for="dreamTitle">Dream title</label>
+              <input id="dreamTitle" maxlength="80" placeholder="The lighthouse in the storm">
+
+              <label for="dreamText">Dream details</label>
+              <textarea id="dreamText" rows="7" required placeholder="Describe the setting, people, emotions, symbols, and anything that felt unusually vivid..."></textarea>
+
+              <div class="form-grid">
+                <div>
+                  <label for="emotion">Strongest emotion</label>
+                  <select id="emotion">
+                    <option>Curiosity</option><option>Fear</option><option>Joy</option><option>Sadness</option>
+                    <option>Anger</option><option>Confusion</option><option>Peace</option><option>Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="intensity">Intensity</label>
+                  <select id="intensity">
+                    <option value="1">1 — Faint</option><option value="2">2 — Mild</option>
+                    <option value="3" selected>3 — Clear</option><option value="4">4 — Strong</option>
+                    <option value="5">5 — Vivid</option>
+                  </select>
+                </div>
+              </div>
+
+              <label for="lifeContext">Anything happening in your life that might relate to this dream? <span class="optional">(optional)</span></label>
+              <textarea id="lifeContext" rows="3" placeholder="Examples: work, school, relationships, moving, a big decision, stress, or exciting news"></textarea>
+
+              <div class="form-grid compact-grid">
+                <div>
+                  <label for="wakeFeeling">How did you feel when you woke up? <span class="optional">(optional)</span></label>
+                  <input id="wakeFeeling" maxlength="100" placeholder="Relieved, unsettled, curious...">
+                </div>
+                <div>
+                  <label for="recurring">Have you had this dream before?</label>
+                  <select id="recurring"><option value="no">No</option><option value="yes">Yes</option><option value="not-sure">Not sure</option></select>
+                </div>
+              </div>
+
+              <div class="consent-row">
+                <input type="checkbox" id="saveDream" checked>
+                <label for="saveDream">Save this dream locally on this device</label>
+              </div>
+              <button type="submit" class="primary-button">Explore Meaning</button>
+            </form>
+          </div>
+
+          <article id="resultCard" class="content-card result-card" hidden>
+            <span class="eyebrow">REFLECTIVE INTERPRETATION</span>
+            <h2 id="resultTitle"></h2>
+            <div id="resultBody"></div>
+            <p class="disclaimer">Somneiros offers reflective possibilities, not diagnosis, prediction, or medical advice.</p>
+          </article>
         </div>
-        <div class="consent-row"><input type="checkbox" id="saveDream" checked><label for="saveDream">Save this dream locally on this device</label></div>
-        <button type="submit" class="primary-button">Explore Meaning</button>
-      </form>
-      <article id="resultCard" class="result-card" hidden><span class="eyebrow">REFLECTIVE INTERPRETATION</span><h2 id="resultTitle"></h2><div id="resultBody"></div><p class="disclaimer">Somneiros offers reflective possibilities, not diagnosis, prediction, or medical advice.</p></article>
+      </div>
     </section>
 
-    <section id="journal" class="panel">
-      <div class="section-heading"><span class="eyebrow">PRIVATE JOURNAL</span><h2>Your saved dreams</h2><p>Entries remain in your browser unless you export or delete them.</p></div>
-      <div class="journal-actions"><button id="exportButton" class="secondary-button">Export JSON</button><button id="clearButton" class="ghost-button">Clear Journal</button></div><div id="journalList" class="journal-list"></div>
+    <section id="journal" class="app-screen" aria-labelledby="journalTitle">
+      <div class="screen-scroll">
+        <div class="screen-shell">
+          <div class="screen-heading">
+            <div><span class="eyebrow">PRIVATE JOURNAL</span><h1 id="journalTitle">Your saved dreams</h1></div>
+            <p>Entries remain in your browser unless you export or delete them.</p>
+          </div>
+          <div class="journal-toolbar">
+            <button id="exportButton" class="secondary-button" type="button">Export JSON</button>
+            <button id="clearButton" class="ghost-button" type="button">Clear Journal</button>
+          </div>
+          <div id="journalList" class="journal-list"></div>
+        </div>
+      </div>
     </section>
 
-    <section id="symbols" class="panel">
-      <div class="section-heading"><span class="eyebrow">DREAM INTERPRETATION DATABASE</span><h2>Explore dream symbols and experiences</h2><p>Search symbols, actions, emotions, people, places, dream experiences, and recurring situations. Each result offers possibilities and questions rather than one fixed answer.</p><p id="didStats" class="database-stats" aria-live="polite">Loading the dream database…</p></div>
-      <input id="symbolSearch" type="search" placeholder="Search water, house, flying, being chased, teeth...">
-      <div id="categoryFilters" class="category-filters" aria-label="Dream database categories"></div>
-      <div id="symbolGrid" class="symbol-grid"></div>
+    <section id="symbols" class="app-screen" aria-labelledby="symbolsTitle">
+      <div class="screen-scroll">
+        <div class="screen-shell wide-shell">
+          <div class="screen-heading">
+            <div><span class="eyebrow">DREAM INTERPRETATION DATABASE</span><h1 id="symbolsTitle">Explore dream symbols and experiences</h1></div>
+            <p>Search symbols, actions, emotions, people, places, dream experiences, and recurring situations.</p>
+          </div>
+          <div class="database-toolbar content-card">
+            <input id="symbolSearch" type="search" placeholder="Search water, house, flying, being chased, teeth...">
+            <p id="didStats" class="database-stats" aria-live="polite">Loading the dream database…</p>
+            <div id="categoryFilters" class="category-filters" aria-label="Dream database categories"></div>
+          </div>
+          <div id="symbolGrid" class="symbol-grid"></div>
+        </div>
+      </div>
     </section>
 
-    <section id="understanding" class="panel feature-panel">
-      <div class="section-heading"><span class="eyebrow">LEARN</span><h2>Understanding Your Dreams</h2><p>Learn what dreams are, how people have interpreted them through history, which famous dream stories are well supported, and how to think about common symbols without treating them as fixed facts.</p></div>
-      <div class="learning-tabs" role="tablist" aria-label="Dream learning topics"><button class="learning-tab active" data-learning="what_are_dreams">What Are Dreams?</button><button class="learning-tab" data-learning="history">Interpretation Through History</button><button class="learning-tab" data-learning="famous_dreams">Famous Dreams</button><button class="learning-tab" data-learning="symbols">Common Symbols</button></div>
-      <div id="learningStatus" class="loading-message">Loading dream-learning articles…</div><div id="learningGrid" class="learning-grid" aria-live="polite"></div>
-      <p class="disclaimer">Historical and religious interpretations are presented as traditions. Symbol meanings are possibilities, not facts, diagnoses, or predictions.</p>
+    <section id="understanding" class="app-screen" aria-labelledby="understandingTitle">
+      <div class="screen-scroll">
+        <div class="screen-shell wide-shell">
+          <div class="screen-heading">
+            <div><span class="eyebrow">UNDERSTANDING YOUR DREAMS</span><h1 id="understandingTitle">Learn about dreams and their significance</h1></div>
+            <p>Explore sleep science, historical traditions, famous documented dream stories, and common symbols.</p>
+          </div>
+          <div class="learning-tabs" role="tablist" aria-label="Dream learning topics">
+            <button class="learning-tab active" data-learning="what_are_dreams" type="button">What Are Dreams?</button>
+            <button class="learning-tab" data-learning="history" type="button">Through History</button>
+            <button class="learning-tab" data-learning="famous_dreams" type="button">Famous Dreams</button>
+            <button class="learning-tab" data-learning="symbols" type="button">Common Symbols</button>
+          </div>
+          <div id="learningStatus" class="loading-message">Loading dream-learning articles…</div>
+          <div id="learningGrid" class="learning-grid" aria-live="polite"></div>
+          <p class="disclaimer">Historical and religious interpretations are presented as traditions. Symbol meanings are possibilities, not facts, diagnoses, or predictions.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="panel about-panel"><span class="eyebrow">ABOUT</span><h2>Somneiros</h2><p>Somneiros combines a private dream journal, an extensive Dream Interpretation Database, symbolic pattern exploration, and an educational dream library.</p><p>It connects scientific, cultural, psychological, historical, and personal perspectives without presenting any single interpretation as absolute.</p><p class="small">Built as a progressive web app. Install it from a supported browser for an app-like experience.</p></section>
+    <section id="about" class="app-screen" aria-labelledby="aboutTitle">
+      <div class="screen-scroll about-screen">
+        <div class="about-layout">
+          <img class="about-logo" src="assets/icon-512.png" alt="Somneiros crescent moon and eye emblem">
+          <div class="content-card about-card">
+            <span class="eyebrow">ABOUT SOMNEIROS</span>
+            <h1 id="aboutTitle">Dream reflection with context, transparency, and respect for uncertainty.</h1>
+            <p>Somneiros combines a private dream journal, an extensive Dream Interpretation Database, symbolic pattern exploration, and an educational dream library.</p>
+            <p>It connects scientific, cultural, psychological, historical, and personal perspectives without presenting any single interpretation as absolute.</p>
+            <p>Dreams can be meaningful without having one universal meaning. Somneiros helps you examine possibilities and identify the questions that matter to you.</p>
+            <div class="about-signature">Somneiros <span>•</span> Understand <span>•</span> Insight <span>•</span> Transform</div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer><p>Somneiros • Understand • Insight • Transform</p></footer>
-  <script src="app.js?v=5" defer></script>
+
+  <script src="app.js?v=6" defer></script>
 </body>
 </html>

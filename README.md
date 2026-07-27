@@ -20,7 +20,7 @@ Somneiros is a privacy-conscious progressive web app for recording dreams, explo
 - Understanding Your Dreams learning center
 - Evidence labels for documented historical accounts and scientific material
 - Dark and light modes
-- Installable PWA with offline caching
+- Single-screen PWA with offline caching
 
 ## Project structure
 
@@ -64,3 +64,8 @@ Publish from the `main` branch and repository root under **Settings → Pages**.
 ## License
 
 Choose a code license before public release. Brand and logo assets may use separate terms.
+
+
+## Interface design
+
+Somneiros uses a single-screen application shell. The compact brand remains at the left of the header, section navigation remains visible to its right, and only one section is displayed at a time. Each section scrolls independently while remaining part of the same PWA.
