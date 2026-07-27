@@ -1,31 +1,26 @@
-<p align="center">
-  <img src="assets/somneiros-logo.png" alt="Somneiros logo" width="720">
-</p>
+<p align="center"><img src="assets/somneiros-logo.png" alt="Somneiros logo" width="720"></p>
 
 # Somneiros
 
 **Understand • Insight • Transform**
 
-Somneiros is a privacy-conscious progressive web app for recording dreams, exploring recurring patterns, and generating reflective interpretations.
+Somneiros is a privacy-conscious progressive web app for recording dreams, exploring personal patterns, searching an extensive Dream Interpretation Database, and learning about dreams through scientific, historical, cultural, and psychological perspectives.
 
 ## Try the app live
 
 ### [https://davidfliesen.github.io/somneiros](https://davidfliesen.github.io/somneiros)
 
-## Current features
+## Features
 
-- Responsive single-page PWA
-- Installable on supported desktop and mobile browsers
-- Offline application shell
-- Local dream journal stored in the browser
-- JSON journal export
-- Expanded dream-symbol explorer
+- One-submit dream interpretation form
+- Private local dream journal and JSON export
+- Searchable Dream Interpretation Database covering hundreds of symbols and experiences
+- Category filters for actions, emotions, people, animals, places, objects, nature, health, life events, and dream phenomena
+- Interpretation suggestions based on matched dream elements and personal context
 - Understanding Your Dreams learning center
-- Verified and evidence-labeled famous dream stories
-- Current competitor comparison and product differentiation plan
-- Rule-based reflective interpretation prototype
+- Evidence labels for documented historical accounts and scientific material
 - Dark and light modes
-- Colab-ready agentic research notebook for expanding the Dream Interpretation Database
+- Installable PWA with offline caching
 
 ## Project structure
 
@@ -37,80 +32,35 @@ somneiros/
 ├── manifest.webmanifest
 ├── sw.js
 ├── assets/
-│   ├── somneiros-logo.png
-│   ├── icon-192.png
-│   ├── icon-512.png
-│   ├── apple-touch-icon.png
-│   └── favicon.png
 ├── data/
-│   └── did_seed.json
+│   ├── did_app.json
+│   └── understanding_dreams.json
 └── notebooks/
-    └── Somneiros_DID_Agentic_Research.ipynb
+    └── Somneiros_DID_Production_Builder.ipynb
 ```
 
-## Run locally
+## Build the production DID
 
-Because service workers require HTTP or HTTPS, run the project through a local web server rather than opening `index.html` directly.
+Open `notebooks/Somneiros_DID_Production_Builder.ipynb` in Google Colab. Add the required API key through Colab Secrets, review the production settings, and choose **Build Production DID**. The notebook checkpoints every term, rejects unsupported claims, and exports an upload-ready `did_app.json` plus the full source, QA, graph, CSV, SQLite, and archive files.
+
+The app reads `data/did_app.json`. Replace that file with the notebook’s accepted-record export after a completed production run.
+
+## Evidence policy
+
+Somneiros keeps contemporary sleep science, historical theories, religious and cultural traditions, documented biographical accounts, and reflective symbolism separate. It does not present a universal dream dictionary, diagnosis, prophecy, recovered memory, or supernatural certainty.
+
+## Run locally
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000`.
+Open `http://localhost:8000`.
 
-## Publish with GitHub Pages
+## GitHub Pages
 
-1. Create a GitHub repository named `somneiros`.
-2. Upload these files to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose the `main` branch and `/root`.
-6. Save.
-
-The project is configured for:
-
-[https://davidfliesen.github.io/somneiros](https://davidfliesen.github.io/somneiros)
-
-## Dream Interpretation Database
-
-The DID is intended to store multiple interpretations rather than one universal definition. Each record can include:
-
-- Symbol and aliases
-- Psychological themes
-- Cultural or historical tradition
-- Interpretation summary
-- Supporting source
-- Source type and date
-- Confidence level
-- Safety notes
-- Contradictions and alternative readings
-
-The included Colab notebook creates a research workflow with specialized agents for source discovery, evidence extraction, cultural-context review, psychological review, safety review, synthesis, deduplication, and export.
-
-## Important limitations
-
-Somneiros should not present dream interpretations as factual predictions, diagnoses, recovered memories, or evidence of supernatural certainty. Interpretations should be framed as possibilities and reflection prompts.
-
-## Development roadmap
-
-- Replace the starter rules with a DID-backed retrieval system
-- Add recurring-theme analytics
-- Add optional encrypted sync
-- Add user-controlled AI interpretation
-- Add citations and source cards
-- Add dream tagging and calendar views
-- Add image-assisted dream recall
-- Package for iOS and Android after PWA validation
+Publish from the `main` branch and repository root under **Settings → Pages**.
 
 ## License
 
-Choose a license before public release. MIT is suitable for an open-source application, while the logo and brand assets may be retained under separate branding terms.
-
-
-## Understanding Your Dreams artwork
-
-Original artwork is organized under `assets/understanding/` with separate folders for science topics, historical traditions, famous dreams, and common symbols.
-
-## Evidence policy
-
-Somneiros separates contemporary scientific findings, historical interpretations, religious and cultural traditions, first-person historical accounts, popular but disputed anecdotes, and reflective symbol possibilities. Disputed stories must never be presented as established fact.
+Choose a code license before public release. Brand and logo assets may use separate terms.
